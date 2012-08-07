@@ -15,7 +15,11 @@
 		6611E63A15D04DDD0098330B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6611E63915D04DDD0098330B /* AppDelegate.m */; };
 		6611E64915D04FC10098330B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6611E64715D04FC10098330B /* CoreLocation.framework */; };
 		6611E64A15D04FC10098330B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6611E64815D04FC10098330B /* MapKit.framework */; };
-		6611E64E15D0500E0098330B /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6611E64D15D0500E0098330B /* Photo.m */; };
+		6611E65815D07CDB0098330B /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6611E65715D07CDB0098330B /* Photo.m */; };
+		6611E65C15D07CEE0098330B /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6611E65B15D07CEE0098330B /* PhotosViewController.m */; };
+		6611E66015D07CF60098330B /* photo-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 6611E65E15D07CF60098330B /* photo-placeholder.png */; };
+		6611E66115D07CF60098330B /* photo-placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6611E65F15D07CF60098330B /* photo-placeholder@2x.png */; };
+		6611E66B15D07F250098330B /* GeoPhotoAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6611E66A15D07F240098330B /* GeoPhotoAPIClient.m */; };
 		FA0FEA6D8B7D4EF78E26AD00 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C94D4BAC2D4592A6F75378 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -33,8 +37,14 @@
 		6611E63915D04DDD0098330B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6611E64715D04FC10098330B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6611E64815D04FC10098330B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		6611E64C15D0500E0098330B /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
-		6611E64D15D0500E0098330B /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		6611E65615D07CDB0098330B /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		6611E65715D07CDB0098330B /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		6611E65A15D07CEE0098330B /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		6611E65B15D07CEE0098330B /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
+		6611E65E15D07CF60098330B /* photo-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-placeholder.png"; sourceTree = "<group>"; };
+		6611E65F15D07CF60098330B /* photo-placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-placeholder@2x.png"; sourceTree = "<group>"; };
+		6611E66915D07F240098330B /* GeoPhotoAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoPhotoAPIClient.h; sourceTree = "<group>"; };
+		6611E66A15D07F240098330B /* GeoPhotoAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoPhotoAPIClient.m; sourceTree = "<group>"; };
 		99C94D4BAC2D4592A6F75378 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -58,8 +68,6 @@
 		6611E61A15D04DDD0098330B = {
 			isa = PBXGroup;
 			children = (
-				6611E64C15D0500E0098330B /* Photo.h */,
-				6611E64D15D0500E0098330B /* Photo.m */,
 				6611E64715D04FC10098330B /* CoreLocation.framework */,
 				6611E64815D04FC10098330B /* MapKit.framework */,
 				6611E62F15D04DDD0098330B /* photo-client */,
@@ -91,9 +99,14 @@
 		6611E62F15D04DDD0098330B /* photo-client */ = {
 			isa = PBXGroup;
 			children = (
+				6611E65D15D07CF60098330B /* Images */,
+				6611E65915D07CEE0098330B /* Controllers */,
+				6611E65515D07CDB0098330B /* Models */,
 				6611E63815D04DDD0098330B /* AppDelegate.h */,
 				6611E63915D04DDD0098330B /* AppDelegate.m */,
 				6611E63015D04DDD0098330B /* Supporting Files */,
+				6611E66915D07F240098330B /* GeoPhotoAPIClient.h */,
+				6611E66A15D07F240098330B /* GeoPhotoAPIClient.m */,
 			);
 			path = "photo-client";
 			sourceTree = "<group>";
@@ -107,6 +120,33 @@
 				6611E63715D04DDD0098330B /* photo-client-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6611E65515D07CDB0098330B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6611E65615D07CDB0098330B /* Photo.h */,
+				6611E65715D07CDB0098330B /* Photo.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6611E65915D07CEE0098330B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6611E65A15D07CEE0098330B /* PhotosViewController.h */,
+				6611E65B15D07CEE0098330B /* PhotosViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6611E65D15D07CF60098330B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6611E65E15D07CF60098330B /* photo-placeholder.png */,
+				6611E65F15D07CF60098330B /* photo-placeholder@2x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +202,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6611E63415D04DDD0098330B /* InfoPlist.strings in Resources */,
+				6611E66015D07CF60098330B /* photo-placeholder.png in Resources */,
+				6611E66115D07CF60098330B /* photo-placeholder@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +233,9 @@
 			files = (
 				6611E63615D04DDD0098330B /* main.m in Sources */,
 				6611E63A15D04DDD0098330B /* AppDelegate.m in Sources */,
-				6611E64E15D0500E0098330B /* Photo.m in Sources */,
+				6611E65815D07CDB0098330B /* Photo.m in Sources */,
+				6611E65C15D07CEE0098330B /* PhotosViewController.m in Sources */,
+				6611E66B15D07F250098330B /* GeoPhotoAPIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
